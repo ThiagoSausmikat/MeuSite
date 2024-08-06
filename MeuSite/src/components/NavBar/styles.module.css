@@ -1,0 +1,175 @@
+/* Estilos globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #5bb462;
+    --primary-dark: #4f9c55;
+    --secondary-color: #ffea00;
+    --secondary-dark: #e3d002;
+    --overlay: rgba(0,0,0,.7);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    padding: 0 20px; /* Adiciona algum espaçamento lateral */
+
+    position: fixed;
+    height: 90px;
+    
+    z-index: 2;
+    transition: .3s ease-in;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.9);
+}
+
+/* Nome à esquerda */
+.nome {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 7rem;
+    cursor: pointer;
+}
+
+.navItem{
+    color: #ffffff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    
+}
+
+/* Menu Hambúrguer à direita */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 10;
+    /* Garantir visibilidade com um fundo claro */
+    background-color: rgba(0,0,0,.9);
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 7rem;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Menu de Navegação */
+.navMenu {
+    display: flex;
+    gap: 20px; /* Adiciona espaçamento entre os itens */
+    color: #ffffff;
+    margin-right: 7rem;
+}
+
+/* Menu Mobile */
+.navMenu.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    background-color: rgba(0,0,0,.9);
+    width: 100%;
+    height: 90vh;
+    padding: 20px;
+    transition: .3s;
+}
+
+@media screen and (max-width: 800px) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px; /* Ajuste o espaçamento lateral conforme necessário */
+        width: 100%;
+        
+    
+    }
+
+    .nome {
+        margin-right: auto; /* Nome sempre à esquerda */
+    }
+
+    .navMenu {
+        display: none; /* Inicialmente oculto */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        top: 90px;
+        left: -100%;
+        background-color: rgba(0,0,0,.9);
+        height: 90vh;
+        transition: .3s;
+        padding: 20px;
+       
+    
+        
+    }
+
+    .navMenu.active {
+        display: flex;
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 430px) {
+   
+    /* Assegura que o menu hambúrguer esteja visível e alinhado à direita */
+    .navbar {
+        padding: 0 10px; /* Ajuste o espaçamento lateral conforme necessário */
+    }
+
+    .hamburger {
+        display: block; /* Sempre visível em telas pequenas */
+        
+    }
+
+    .nome {
+        margin-right: auto; /* Nome sempre à esquerda */
+    }
+
+    .navMenu {
+        display: none; /* Inicialmente oculto */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        top: 90px;
+        left: -100%;
+        background-color: rgba(0,0,0,.9);
+        height: 90vh;
+        transition: .3s;
+        padding: 20px;
+       
+    }
+
+    .navMenu.active {
+        display: flex;
+        left: 0;
+    }
+}

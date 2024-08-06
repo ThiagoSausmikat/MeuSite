@@ -1,0 +1,203 @@
+
+
+.conteiner {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #0D0D0D;
+    text-align: center; /* Centraliza o texto do título e conteúdo dentro do contêiner */    
+    box-shadow: inset 0px 20px 50px rgb(0, 0, 0); /*Sombra*/
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 80px;
+    font-family: "Poppins", sans-serif;
+}
+
+.conteinerContatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.form {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contactForm {
+    border-radius: 30px;
+    width: 31.25rem;
+    height: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px; /* Define uma largura máxima */
+    background: #1F1F1F;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formGroup {
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos dos tirulos */
+  .formGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #F3F3F3;
+    opacity: 60.39%;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Estilos dos campos de entrada */
+  .formGroup input,
+  .formGroup textarea {
+    width: 23rem;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+    border: 0.5px solid #F3F3F3;
+    background-color: #3F3F46;
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.circulo {
+    margin-top: 100px;
+    width: 9rem; /* Largura do círculo */
+    height: 9rem; /* Altura do círculo */
+    border-radius: 50%; /* Faz o elemento se tornar um círculo */
+    background-color: #fff; /* Cor de fundo do círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icon1 {
+    width: auto;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1F1F1F; /* Cor do ícone do LinkedIn */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.icon1:hover {
+    color: #3F3F46; /* Cor ao passar o mouse */
+  }
+
+.icon2 {
+    width: auto;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1F1F1F; /* Cor do ícone do LinkedIn */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.icon2:hover {
+    color: #3F3F46; /* Cor ao passar o mouse */
+  }
+
+
+
+  @media screen and (max-width: 1385px) {
+    
+    .conteinerContatos {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        margin: 0rem;
+        padding: 0rem;
+        margin-top: 30px;
+    }
+
+    .contatos {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    
+}
+
+  @media screen and (max-width: 900px) {
+
+    .titulo {
+      font-size: 60px;
+    }   
+  }
+
+  @media screen and (max-width: 450px) {
+
+    .form {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+      
+      .contactForm {
+        width: 23rem;
+        height: 35rem;
+      }
+      
+      input {
+        max-width: 80%;
+      }
+
+      textarea {
+        max-width: 80%;
+      }
+
+      .circulo {
+        width: 7rem; /* Largura do círculo */
+        height: 7rem; /* Altura do círculo */
+    }
+
+    .contatos {
+        gap: 45px;
+      }
+  }
+  
