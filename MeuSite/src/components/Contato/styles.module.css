@@ -77,20 +77,6 @@
     text-align: left;
     color:#fff
   }
-  
-  button {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
 
   .contatos {
     display: flex;
@@ -142,20 +128,20 @@
   .buttonSubmit {
     font-size: 18px;
     color: #ffffff;
-    background-color: #1EBD2E;
+    background-color: #13881f;
     border: 2px solid #ffffff;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    border-radius: 4px;
+
+    padding: 0.5rem 3rem; /* Define o padding (10px em cima e embaixo, 15px nas laterais) */
+    cursor: pointer;
   }
   
   .buttonSubmit:hover {
     font-size: 20px;
     color: #ffffff;
-    background-color: #13881f;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    background-color: #1EBD2E;
+    
   }
-
 
 
   @media screen and (max-width: 1385px) {

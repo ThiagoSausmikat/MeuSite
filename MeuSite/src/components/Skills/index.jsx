@@ -114,6 +114,28 @@ const SkillsSection = () => {
   <div className={styles.skillsCirculosClaro2}></div>
   </div>
 </div>
+
+<div className={styles.skills2}>
+  <h1 className={styles.skillsTitulo2}>JavaScript</h1>
+  <div className={styles.skillsCirculos}>
+  <div className={styles.skillsCirculosEscuro2}></div>
+  <div className={styles.skillsCirculosEscuro2}></div>
+  <div className={styles.skillsCirculosEscuro2}></div>
+  <div className={styles.skillsCirculosClaro2}></div>
+  <div className={styles.skillsCirculosClaro2}></div>
+  </div>
+</div>
+
+<div className={styles.skills2}>
+  <h1 className={styles.skillsTitulo2}>React</h1>
+  <div className={styles.skillsCirculos}>
+  <div className={styles.skillsCirculosEscuro2}></div>
+  <div className={styles.skillsCirculosEscuro2}></div>
+  <div className={styles.skillsCirculosEscuro2}></div>
+  <div className={styles.skillsCirculosEscuro2}></div>
+  <div className={styles.skillsCirculosClaro2}></div>
+  </div>
+</div>
 </div>
 </div>
 
