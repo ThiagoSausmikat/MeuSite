@@ -1,12 +1,15 @@
-.imagemFixa {
-    position: fixed;
-    top: 0; /* Define a distância do topo da tela */
-    left: 0; /* Define a distância da esquerda da tela */
-    z-index: 1000; /* Garante que a imagem fique sobre outros elementos */
-    
-  }
-  
-  .imagemFixa img {
-    width: 100px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
-  }
+.paralax {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;    
+}
+
+.content {
+  width: auto;
+  height: 60vh;  
+  position: sticky;
+}

@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import styles from "./styles.module.css";
 
 
 const SkillsSection = () => {
+  
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      textRef.current.style.transform = `translateX(${scrollTop * 0.1}px)`;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
   return (
     
 <section className={styles.conteiner}  id='skills'>
@@ -100,6 +116,10 @@ const SkillsSection = () => {
 </div>
 </div>
 </div>
+
+<div className={styles.scrollingContainer}>
+      <h1 ref={textRef}>Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack</h1>
+    </div>
 </section>
 
   );

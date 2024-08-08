@@ -102,8 +102,6 @@ ul {
         align-items: center;
         padding: 0 10px; /* Ajuste o espaçamento lateral conforme necessário */
         width: 100%;
-        
-    
     }
 
     .nome {
@@ -121,10 +119,7 @@ ul {
         background-color: rgba(0,0,0,.9);
         height: 90vh;
         transition: .3s;
-        padding: 20px;
-       
-    
-        
+        padding: 20px; 
     }
 
     .navMenu.active {
@@ -146,13 +141,15 @@ ul {
 
     .hamburger {
         display: block; /* Sempre visível em telas pequenas */
+        margin-right: 3rem;
         
     }
 
     .nome {
         margin-right: auto; /* Nome sempre à esquerda */
+        font-size: 1.5rem;
+        margin-left: 2rem;
     }
-
     .navMenu {
         display: none; /* Inicialmente oculto */
         flex-direction: column;
@@ -165,7 +162,7 @@ ul {
         height: 90vh;
         transition: .3s;
         padding: 20px;
-       
+        
     }
 
     .navMenu.active {

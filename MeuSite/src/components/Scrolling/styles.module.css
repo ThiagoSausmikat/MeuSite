@@ -1,0 +1,28 @@
+.scrollingContainer {
+    position: relative; /* Posiciona o container como relativo para utilizarmos o position: absolute no texto */
+    width: 100%;
+    overflow: hidden; /* Esconde o texto que ultrapassa os limites do container */    
+    white-space: nowrap;
+    display: flex; /* Transforma o container em um flex container */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; 
+    font-size: 30px;  
+  }
+  
+  .scrollingText {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza o texto verticalmente */
+    white-space: nowrap; /* Impede que o texto quebre em linhas */
+    animation: scrollText 10s linear infinite; /* Animação com duração de 10 segundos, linear e infinita */
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

@@ -2,7 +2,7 @@
     height: auto;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #121212;
+    background-color: #0D0D0D;
     text-align: center; /* Centraliza o texto do título e conteúdo dentro do contêiner */    
     box-shadow: inset 0px 20px 50px rgb(0, 0, 0); /*Sombra*/
 }
@@ -30,7 +30,6 @@
     align-items: center; /* Alinha os itens horizontalmente no centro */
     justify-content: center;
     gap: 20px; /* Espaço entre o título e os círculos */
-    
 }
 
 .skillsTitulo1 {
@@ -112,13 +111,7 @@
 }
 
 
-
-
-
-
 @media screen and (max-width: 1385px) {
-
-   
     
     .ConteinerSkills1 {
         display: flex;
@@ -198,3 +191,19 @@
     
       
   }
+
+
+
+  .scrollingContainer {
+    position: relative; /* Posiciona o container como relativo para utilizarmos o position: absolute no texto */
+    width: 100%;
+    padding-top: 100px;
+    overflow: hidden; /* Esconde o texto que ultrapassa os limites do container */
+    white-space: nowrap;
+    display: flex; /* Transforma o container em um flex container */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; 
+    font-size: 30px;
+    color: #fff;
+  }
+  

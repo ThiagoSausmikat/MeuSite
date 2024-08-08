@@ -1,12 +1,15 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 import styles from "./styles.module.css";
-import paralax from "../../assets/paralax.jpg"
+import Paralax from '../../assets/paralax.jpg'
 
 const ParallaxSection = () => {
   return (
-    <div className={styles.imagemFixa} id='home' >
-      <img src={paralax} alt="Imagem Fixa" />
+    <div id='home' >
+    <Parallax strength={300} blur={{min: -5, max: 5}} bgImage={Paralax}  >
+      <div className={styles.content}>
+      </div>
+    </Parallax>
     </div>
   );
 };
