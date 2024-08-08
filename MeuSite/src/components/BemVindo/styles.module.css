@@ -106,6 +106,7 @@
     .textContent {
         font-size: 1.6rem;
         border-right: 8px solid #1EBD2E;
+        margin-top: 130px;
     }
 
     .conteiner {
@@ -114,6 +115,6 @@
     }
 
     .lottieContainer {
-        margin-top: 100px;
+        margin-top: 80px;
     }
 }

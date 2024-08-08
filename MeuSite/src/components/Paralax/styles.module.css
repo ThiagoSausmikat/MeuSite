@@ -2,14 +2,26 @@
   display: block;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 1020vh; /* Ajuste a altura conforme necessário */
   background-size: cover;
-  background-position: center;
+  background-position: center top; /* Ajuste a posição conforme necessário */
   max-width: 100%;    
 }
 
 .content {
-  width: auto;
-  height: 60vh;  
-  position: sticky;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; /* Ajuste a altura conforme necessário */
+  background-size: cover;
+  background-position: center top; /* Ajuste a posição conforme necessário */
+  
+}
+
+
+@media screen and (max-width: 450px) {
+  .content { 
+    min-height: 30vh; /* Ajuste a altura conforme necessário */
+  }
+
 }

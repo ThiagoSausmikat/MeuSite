@@ -187,7 +187,7 @@
   @media screen and (max-width: 450px) {
 
     .titulo {
-        font-size: 55px;
+        font-size: 45px;
     }
 
     .form {
@@ -200,16 +200,16 @@
       }
       
       .contactForm {
-        width: 23rem;
-        height: 35rem;
+        width: 20rem;
+        height: 35rem;  
       }
       
       input {
-        max-width: 80%;
+        max-width: 75%;
       }
 
       textarea {
-        max-width: 80%;
+        max-width: 75%;
       }
 
       .circulo {

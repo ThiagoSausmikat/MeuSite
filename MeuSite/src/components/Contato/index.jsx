@@ -26,8 +26,16 @@ const ContatoSection = () => {
         Swal.fire({
             title: "Muito bem!",
             text: "Email enviado com sucesso",
-            icon: "success"
-          });
+            icon: "success",
+            customClass: {
+                container: 'my-swal-container',
+                title: 'my-swal-title',
+                content: 'my-swal-content'
+            },
+            width: 'auto', // Ajuste a largura para a porcentagem ou valor fixo, como '400px'
+            padding: '1em' // Ajuste o padding se necessário
+        });
+  
 
         event.target.reset();
       } else {
@@ -38,7 +46,7 @@ const ContatoSection = () => {
 
     return (
         <section className={styles.conteiner} id='contato'>
-                <h1 className={styles.titulo}>Contato</h1>
+                <h1 className={styles.titulo}>CONTATO</h1>
 
             <div className={styles.conteinerContatos}>
 
