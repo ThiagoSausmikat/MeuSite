@@ -38,7 +38,7 @@
   .contactForm {
     border-radius: 30px;
     width: 31.25rem;
-    height: 31.25rem;
+    height: 37rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,6 +138,23 @@
     color: #3F3F46; /* Cor ao passar o mouse */
   }
 
+  .buttonSubmit {
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1EBD2E;
+    border: 2px solid #ffffff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .buttonSubmit:hover {
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #13881f;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
 
 
   @media screen and (max-width: 1385px) {
@@ -169,8 +186,12 @@
 
   @media screen and (max-width: 450px) {
 
+    .titulo {
+        font-size: 55px;
+    }
+
     .form {
-        margin-top: 100px;
+        margin-top: 20px;
         display: flex;
         flex-direction: row;
         align-items: center;

@@ -31,8 +31,7 @@ const Home = () => {
         </div>
       </section>
 
-      
-      <ParallaxSection />
+    <ParallaxSection />
       
     <SkillsSection />
 

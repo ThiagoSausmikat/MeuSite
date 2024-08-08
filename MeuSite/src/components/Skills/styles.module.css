@@ -21,7 +21,6 @@
     display: flex;
     justify-content: center;
     gap: 100px;
-    
 }
 
 .skills1{
@@ -146,7 +145,10 @@
 }
 
 @media screen and (max-width: 450px) {
-
+    
+    .titulo {
+        font-size: 55px;
+    }
     
     .ConteinerSkills1 {
       gap: 20px;
@@ -154,6 +156,7 @@
     
     .skillsTitulo1 {
         margin-top: 0px;
+        font-size: 25px;
     }
 
     .skillsCirculosEscuro1 {
@@ -175,6 +178,7 @@
     
       .skillsTitulo2 {
           margin-top: 0px;
+          font-size: 25px;
       }
   
       .skillsCirculosEscuro2 {
@@ -187,6 +191,10 @@
           margin-top: 0px;
           width: 18px; /* Largura do círculo */
           height: 18px; /* Altura do círculo */
+      }
+
+      .scrollingText {
+        font-size: 30px;
       }
     
       
@@ -203,7 +211,7 @@
     display: flex; /* Transforma o container em um flex container */
     justify-content: center; /* Centraliza os itens horizontalmente */
     align-items: center; 
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
   }
   

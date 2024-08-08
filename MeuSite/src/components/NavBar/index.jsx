@@ -40,7 +40,7 @@ const Navbar = () => {
                         <Link to="skills" spy={true} smooth={true} offset={0} duration={800} onClick={closeMenu}>Skills</Link>
                     </li>
                     <li className={styles.navItem}>
-                        <Link to="demo" spy={true} smooth={true} offset={0} duration={800} onClick={closeMenu}>Conato</Link>
+                        <Link to="contato" spy={true} smooth={true} offset={0} duration={800} onClick={closeMenu}>Contato</Link>
                     </li>
                 </ul>
             </nav>

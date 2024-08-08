@@ -9,7 +9,7 @@ const SkillsSection = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      textRef.current.style.transform = `translateX(${scrollTop * 0.1}px)`;
+      textRef.current.style.transform = `translateX(${scrollTop * 0.5}px)`;
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -118,7 +118,7 @@ const SkillsSection = () => {
 </div>
 
 <div className={styles.scrollingContainer}>
-      <h1 ref={textRef}>Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack</h1>
+      <h1 ref={textRef} className={styles.scrollingText}>Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura / Fullstack / Thiago Moura /</h1>
     </div>
 </section>
 

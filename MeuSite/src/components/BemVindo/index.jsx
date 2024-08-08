@@ -8,7 +8,7 @@ const BemVindoSection = () => {
    
     return (
     
-    <section className={styles.conteiner} id='sobre'>
+    <section className={styles.conteiner} id='home'>
       <div className={styles.textContent}>Seja bem vindo ao meu Site</div>
       <div className={styles.lottieContainer}>
       <Lottie animationData={Scroll} loop={true} className={styles.lottie} />

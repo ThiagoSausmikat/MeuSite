@@ -1,88 +1,65 @@
 import React, { useState } from 'react';
 import styles from "./styles.module.css";
+import Swal from 'sweetalert2'
 import { FaGithub } from "react-icons/fa";
-import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { FaLinkedinIn } from "react-icons/fa";
 
 const ContatoSection = () => {
+    
+    const [result, setResult] = React.useState("");
 
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+    const onSubmit = async (event) => {
+      event.preventDefault();
+      setResult("Sending....");
+      const formData = new FormData(event.target);
+  
+      formData.append("access_key", "89e7fbe1-af8c-449c-9aa9-9fdfb7a0480e");
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+  
+      const data = await response.json();
+  
+      if (data.success) {
+        Swal.fire({
+            title: "Muito bem!",
+            text: "Email enviado com sucesso",
+            icon: "success"
+          });
 
-    // Função para lidar com a mudança de valor dos campos
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value
-        });
-    };
-
-    // Função para lidar com o envio do formulário
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Aqui você pode fazer o que quiser com os dados, como enviá-los para um servidor
-        console.log('Form data submitted:', formData);
-        // Limpar o formulário após o envio, se necessário
-        setFormData({
-            name: '',
-            email: '',
-            message: ''
-        });
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
     };
 
     return (
-        <section className={styles.conteiner} id='sobre'>
+        <section className={styles.conteiner} id='contato'>
                 <h1 className={styles.titulo}>Contato</h1>
 
             <div className={styles.conteinerContatos}>
 
                 <div className={styles.form}>
-                    <form onSubmit={handleSubmit} className={styles.contactForm}>
+                    <form onSubmit={onSubmit} className={styles.contactForm}>
                         <div className={styles.formGroup}>
-                            <label htmlFor="name">Nome</label>
-                            <input
-                                placeholder='Digite o seu nome'
-                                type="text"
-                                id="name"
-                                name="name"
-                                
-                                value={formData.name}
-                                onChange={handleChange}
-                                required
-                            />
+                            <label>Nome</label>
+                            <input  type="text" id="nome" name="nome" placeholder='Digite o seu nome' required />
                         </div>
 
                         <div className={styles.formGroup}>
-                            <label htmlFor="email">Email</label>
-                            <input
-                                placeholder='Digite o seu email'
-                                type="email"
-                                id="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                required
-                            />
+                            <label>Email</label>
+                            <input  type="email" id="email" name="email" placeholder='Digite o seu email' required />
                         </div>
 
                         <div className={styles.formGroup}>
-                            <label htmlFor="message">Mensagem</label>
-                            <textarea
-                                placeholder='Digite a sua mensagem'
-                                id="message"
-                                name="message"
-                                rows="5"
-                                value={formData.message}
-                                onChange={handleChange}
-                                required
-                            ></textarea>
+                            <label>Mensagem</label>
+                            <textarea  id="mensagem" name="mensagem" rows="5" placeholder='Digite a sua mensagem' required />
                         </div>
 
-                        <button type="submit">Enviar</button>
+                        <button className={styles.buttonSubmit}type="submit">Enviar</button>
                     </form>
                 </div>
 
