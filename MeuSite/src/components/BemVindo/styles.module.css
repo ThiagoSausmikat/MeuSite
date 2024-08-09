@@ -30,6 +30,7 @@
 .lottie {
     width: 12rem;
     height: 12rem;
+    cursor: pointer;
 }
 
 @keyframes mark {
