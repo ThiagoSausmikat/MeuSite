@@ -113,3 +113,25 @@ h3, h4, p {
     
       
   }
+
+  @media screen and (max-width: 450px) {
+    
+    .titulo {
+        font-size: 40px;
+    }
+
+    .cardsContent1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%; /* Adjust as needed */
+        height: auto;
+        background-color: #1F1F1F;
+        padding: 20px;
+        margin-bottom: 20px;
+        
+    }
+    
+      
+  }

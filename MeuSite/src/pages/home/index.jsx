@@ -5,10 +5,9 @@ import foto from "../../assets/foto.png"
 import SkillsSection from "../../components/Skills/index.jsx";
 import ContatoSection from "../../components/Contato/index.jsx";
 import ScrollingText from "../../components/ScrollingText/index.jsx";
-import Scrolling from "../../components/Scrolling/index.jsx";
 import BemVindoSection from '../../components/BemVindo/index.jsx';
 import ParallaxSection from '../../components/Paralax/index.jsx';
-import CursosSection from '../../components/Cursos/index.jsx';
+import FormacaoSection from '../../components/Formacao/index.jsx';
 
 
 
@@ -36,7 +35,7 @@ const Home = () => {
       
     <SkillsSection />
 
-    <CursosSection />
+    <FormacaoSection />
 
     <ContatoSection />
 

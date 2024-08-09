@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./styles.module.css";
 import Estadosunidos from "../../assets/Estadosunidos.png"
 
-const CursosSection = () => {
+const FormacaoSection = () => {
   return (
     <section className={styles.conteiner}  id='skills'>
         
@@ -50,4 +50,4 @@ const CursosSection = () => {
   );
 };
 
-export default CursosSection;
+export default FormacaoSection;
