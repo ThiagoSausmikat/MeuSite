@@ -160,7 +160,6 @@
         flex-direction: row;
         gap: 100px;
     }
-
     
 }
 
@@ -190,7 +189,12 @@
         width: 20rem;
         height: 35rem;  
       }
-      
+
+      .formGroup label {
+        font-size: 22px; /* Ajuste o tamanho da fonte das labels para telas menores */
+    }
+
+
       input {
         max-width: 75%;
       }

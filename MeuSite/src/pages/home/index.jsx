@@ -2,14 +2,15 @@ import React from 'react';
 import styles from "./styles.module.css";
 import Navbar from "../../components/NavBar/index.jsx";
 import foto from "../../assets/foto.png"
-
 import SkillsSection from "../../components/Skills/index.jsx";
 import ContatoSection from "../../components/Contato/index.jsx";
 import ScrollingText from "../../components/ScrollingText/index.jsx";
 import Scrolling from "../../components/Scrolling/index.jsx";
 import BemVindoSection from '../../components/BemVindo/index.jsx';
-
 import ParallaxSection from '../../components/Paralax/index.jsx';
+import CursosSection from '../../components/Cursos/index.jsx';
+
+
 
 
 const Home = () => {
@@ -34,6 +35,8 @@ const Home = () => {
     <ParallaxSection />
       
     <SkillsSection />
+
+    <CursosSection />
 
     <ContatoSection />
 

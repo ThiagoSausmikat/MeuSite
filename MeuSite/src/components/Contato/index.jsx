@@ -53,17 +53,17 @@ const ContatoSection = () => {
                 <div className={styles.form}>
                     <form onSubmit={onSubmit} className={styles.contactForm}>
                         <div className={styles.formGroup}>
-                            <label>Nome</label>
+                            <label className={styles.labelText}>Nome</label>
                             <input  type="text" id="nome" name="nome" placeholder='Digite o seu nome' required />
                         </div>
 
                         <div className={styles.formGroup}>
-                            <label>Email</label>
+                            <label className={styles.labelText}>Email</label>
                             <input  type="email" id="email" name="email" placeholder='Digite o seu email' required />
                         </div>
 
                         <div className={styles.formGroup}>
-                            <label>Mensagem</label>
+                            <label className={styles.labelText}>Mensagem</label>
                             <textarea  id="mensagem" name="mensagem" rows="5" placeholder='Digite a sua mensagem' required />
                         </div>
 

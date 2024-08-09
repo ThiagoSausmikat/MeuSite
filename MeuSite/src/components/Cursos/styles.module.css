@@ -1,0 +1,115 @@
+.conteiner {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #0D0D0D;
+    text-align: center; /* Centraliza o texto do título e conteúdo dentro do contêiner */    
+    box-shadow: inset 0px 20px 50px rgb(0, 0, 0); /*Sombra*/
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 80px;
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    gap: 2rem;
+    
+}
+
+h3, h4, p {
+    text-align: left;
+    color: #ffffff;
+}
+
+.subtitulo1 {
+    justify-content: center;
+    color: #ffffff;
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+.subtitulo2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 20px;
+}
+
+.img {
+    height: 3rem;
+    width: auto;
+    margin-bottom: 45px;
+}
+
+.formacaoCards {
+    display: flex;
+    flex-direction: row;
+    align-items: start; /* Centraliza horizontalmente o conteúdo interno */
+    justify-content: center; /* Centraliza verticalmente o conteúdo interno */
+    padding-top: 50px;
+    gap: 40px;
+
+    
+    
+}
+
+.cursosCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente o conteúdo interno */
+    justify-content: center; /* Centraliza verticalmente o conteúdo interno */
+    
+}
+
+.idiomasCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente o conteúdo interno */
+    justify-content: center; /* Centraliza verticalmente o conteúdo interno */
+    
+}
+
+.cardsContent1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 22rem; /* Adjust as needed */
+    height: 25rem;
+    background-color: #1F1F1F;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.cardsContent2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+  }
+
+  @media screen and (max-width: 1385px) {
+    
+    .formacaoCards {
+     
+    align-items: center; /* Centraliza horizontalmente o conteúdo interno */
+    justify-content: center; /* Centraliza verticalmente o conteúdo interno */
+    padding-top: 50px;
+    gap: 40px;
+
+        flex-direction: column;
+        
+        
+        
+    }
+    
+      
+  }
