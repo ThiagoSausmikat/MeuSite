@@ -35,8 +35,8 @@ const FormacaoSection = () => {
           <div className={styles.idiomasCards}>
           <h1 className={styles.subtitulo2}>Idiomas</h1>
           <div className={styles.cardsContent1}>
-                  <ul className={styles.cardsContent2}>
-                    <li><h3>Inglês</h3></li>
+                  <ul className={styles.cardsContent1}>
+                    <li className={styles.textIngles}>Inglês</li>
                     <img class={styles.img} src={Estadosunidos} alt="logotipo"></img>
                     <li><h4>Nivel: Básico</h4></li>
                   </ul>

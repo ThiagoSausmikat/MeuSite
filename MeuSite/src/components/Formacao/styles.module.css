@@ -26,6 +26,13 @@ h3, h4, p {
     color: #ffffff;
 }
 
+.textIngles {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
 .subtitulo1 {
     justify-content: center;
     color: #ffffff;
@@ -52,10 +59,7 @@ h3, h4, p {
     align-items: start; /* Centraliza horizontalmente o conteúdo interno */
     justify-content: center; /* Centraliza verticalmente o conteúdo interno */
     padding-top: 50px;
-    gap: 40px;
-
-    
-    
+    gap: 40px;   
 }
 
 .cursosCards {
@@ -121,13 +125,10 @@ h3, h4, p {
     }
 
     .cardsContent1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 80%; /* Adjust as needed */
-        height: auto;
-        background-color: #1F1F1F;
+       
+        width: 20rem; /* Adjust as needed */
+        height: 25rem;
+       
         padding: 20px;
         margin-bottom: 20px;
         
