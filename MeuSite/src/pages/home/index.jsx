@@ -14,7 +14,7 @@ import FormacaoSection from '../../components/Formacao/index.jsx';
 const Home = () => {
   
     // URL para o arquivo PDF (deve estar na pasta public)
-    const pdfUrl = '../../../public/Curriculo.pdf';
+    const pdfUrl = '/Curriculo.pdf';
 
 
   return (
