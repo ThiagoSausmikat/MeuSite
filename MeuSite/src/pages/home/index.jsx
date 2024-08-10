@@ -28,7 +28,7 @@ const Home = () => {
         <div className={styles.conteinercontent}>
         <div>
         <img className={styles.foto} src={foto} alt="Logo" />
-        <div><a href={pdfUrl} download="Currículo Comportamental"><button className={styles.button}>Baixar Currículo</button></a></div>
+        <div><a href={pdfUrl} download="Currículo.pdf"><button className={styles.button}>Baixar Currículo</button></a></div>
         </div>
         <div>
         <h1 className={styles.titulo}>Quem sou eu?</h1>
